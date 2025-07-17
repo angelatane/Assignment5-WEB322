@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "AI Innovation",
+      "feature_img_url": "https://via.placeholder.com/150",
+      "summary_short": "A brief overview of AI project.",
+      "intro_short": "This project focuses on artificial intelligence development.",
+      "impact": "This will impact future automation.",
+      "original_source_url": "https://example.com/ai",
+      "sector_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Healthcare Revolution",
+      "feature_img_url": "https://via.placeholder.com/150",
+      "summary_short": "A brief overview of healthcare project.",
+      "intro_short": "Improving patient care through technology.",
+      "impact": "Better healthcare for all.",
+      "original_source_url": "https://example.com/healthcare",
+      "sector_id": 2
+    },
+    {
+      "id": 3,
+      "title": "Green Planet",
+      "feature_img_url": "https://via.placeholder.com/150",
+      "summary_short": "Saving the environment one step at a time.",
+      "intro_short": "Raising awareness on climate change.",
+      "impact": "Cleaner environment for future generations.",
+      "original_source_url": "https://example.com/green",
+      "sector_id": 4
+    }
+  ]
+  

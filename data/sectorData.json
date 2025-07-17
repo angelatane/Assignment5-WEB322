@@ -1,0 +1,7 @@
+[
+    { "id": 1, "sector_name": "Technology" },
+    { "id": 2, "sector_name": "Healthcare" },
+    { "id": 3, "sector_name": "Education" },
+    { "id": 4, "sector_name": "Environment" }
+  ]
+  

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Project</title>
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <%- include('partials/navbar') %>
+
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-lg rounded">
+      <h1 class="text-3xl font-bold mb-6 text-blue-700">Add a New Project</h1>
+
+      <form action="/solutions/add" method="POST" class="space-y-4">
+        <div class="form-control">
+          <label class="label font-semibold">Title</label>
+          <input type="text" name="title" placeholder="Enter project title" class="input input-bordered" required />
+        </div>
+
+        <div class="form-control">
+          <label class="label font-semibold">Image URL</label>
+          <input type="text" name="feature_img_url" placeholder="https://example.com/image" class="input input-bordered" required />
+        </div>
+
+        <div class="form-control">
+          <label class="label font-semibold">Sector</label>
+          <select name="sector_id" class="select select-bordered">
+            <option value="1">Technology</option>
+            <option value="2">Health</option>
+            <option value="3">Education</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label class="label font-semibold">Intro</label>
+          <textarea name="intro" rows="2" placeholder="Brief intro..." class="textarea textarea-bordered" required></textarea>
+        </div>
+
+        <div class="form-control">
+          <label class="label font-semibold">Summary</label>
+          <textarea name="summary_short" rows="2" placeholder="Short summary..." class="textarea textarea-bordered" required></textarea>
+        </div>
+
+        <div class="form-control">
+          <label class="label font-semibold">Impact</label>
+          <textarea name="impact" rows="2" placeholder="Impact of the project" class="textarea textarea-bordered" required></textarea>
+        </div>
+
+        <div class="form-control">
+          <label class="label font-semibold">Original Source URL</label>
+          <input type="text" name="source_url" placeholder="https://source.com" class="input input-bordered" />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-full mt-4">Add Project</button>
+      </form>
+    </div>
+  </body>
+</html>
