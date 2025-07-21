@@ -85,6 +85,11 @@ app.post('/solutions/add', async (req, res) => {
   }
 });
 
+// ✅ Debug Route (check if server is alive)
+app.get('/debug', (req, res) => {
+  res.send('✅ Server is alive!');
+});
+
 // 404 Page
 app.use((req, res) => {
   res.status(404).render('404');
@@ -92,4 +97,3 @@ app.use((req, res) => {
 
 // Start Server
 module.exports = app;
-
