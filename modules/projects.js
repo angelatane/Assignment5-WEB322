@@ -9,11 +9,13 @@ let Project;
 try {
   sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
+    dialectModule: require('pg'), // 🔥 This is the key fix
     dialectOptions: {
       ssl: { require: true, rejectUnauthorized: false },
     },
     logging: false,
   });
+  
 
   // ✅ Define models only after sequelize is created
   Sector = sequelize.define('Sector', {
