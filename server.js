@@ -95,5 +95,11 @@ app.use((req, res) => {
   res.status(404).render('404');
 });
 
-// Start Server
-module.exports = app;
+// 🟢 Start server after DB initialization
+projects.initialize().then(() => {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running at http://localhost:${PORT}`);
+  });
+}).catch(err => {
+  console.error('❌ Failed to initialize database:', err);
+});
