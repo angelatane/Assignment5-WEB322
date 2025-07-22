@@ -1,7 +1,7 @@
 {
   "name": "assignment5-web322",
   "version": "1.0.0",
-  "description": "WEB322 Assignment 5 - Express + PostgreSQL + Vercel",
+  "description": "WEB322 Assignment 5 – Express + PostgreSQL + Vercel",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -10,7 +10,7 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.21.2",
-    "pg": "^8.16.3",
+    "pg": "^8.11.3",
     "sequelize": "^6.37.7",
     "serverless-http": "^3.2.0"
   },
@@ -20,5 +20,3 @@
   "author": "angel suleiman",
   "license": "ISC"
 }
-"dummy": "vercel-test"
-
