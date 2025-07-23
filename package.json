@@ -1,10 +1,11 @@
 {
   "name": "assignment5-web322",
   "version": "1.0.0",
-  "description": "WEB322 Assignment 5 – Express + PostgreSQL + Vercel",
+  "description": "WEB322 Assignment 5 ✅ Express + PostgreSQL + Vercel",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --minify"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
